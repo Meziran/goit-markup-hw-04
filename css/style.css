@@ -154,14 +154,30 @@ align-items: center;
 
 /* HERO */
 .hero{
-    
-    text-align: center;
+    background-image: 
+    linear-gradient(47, 48, 58, 0.4),
+    url("../img/hero.jpg");
     background-color: var(--title-text-color);
+    text-align: center;
+
+    outline: 1px solid black;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 600px;
+    max-width: 1600px;   
 } 
 
 .hero-text{
     display: inline-flex;
     align-content: center;
+
+    padding-top: 200px;
 
     width: 696px;
     color: var(--white);
@@ -227,10 +243,10 @@ margin-top: 94px;
     overflow: hidden;
   }
 
-.features{
-    width: 270px;
-    
+.features{display: block;
+    width: 270px;   
 }
+
 .ul-features .features:not(:last-child),
 .doing .doing-img:not(:last-child),
 .blok-team .card-team:not(:last-child)
