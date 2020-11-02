@@ -158,7 +158,7 @@ align-items: center;
     height: 600px;
     margin-left: auto;
     margin-right: auto;
-    outline: 1px solid black;
+    
     background-image: linear-gradient(
     
         rgba(47, 0, 0, 0.4),
@@ -226,7 +226,8 @@ align-items: center;
 
 .ul-features,
 .doing,
-.blok-team
+.blok-team,
+.client
 {
     display: flex;
     justify-content: center;
@@ -251,7 +252,8 @@ margin-top: 94px;
 
 .ul-features .features:not(:last-child),
 .doing .doing-img:not(:last-child),
-.blok-team .card-team:not(:last-child)
+.blok-team .card-team:not(:last-child),
+.client .card-client:not(:last-child)
 {
     margin-right: 30px;
 }
@@ -273,9 +275,11 @@ margin-top: 94px;
     line-height: 1.19;
     }
 
-.cont-doing{
+.cont-doing,
+.title-client
+{
     padding: 94px 0;
-    /* padding-bottom: 94px; */
+    
 }
 
 /* TEAM */
@@ -307,7 +311,14 @@ margin-top: 94px;
     line-height: 1.19;
     padding-bottom: 30px;
 }
-
+/*client */
+.card-client{
+    width: 170px;
+    height: 90px;
+    border: 1px solid red ;
+    background-position: center;
+    
+}
 /* FOOTER */
 .footer{
     padding-bottom: 60px;
