@@ -236,7 +236,8 @@ align-items: center;
 .ul-features,
 .doing,
 .blok-team,
-.client
+.client,
+.ul-join
 {
     display: flex;
     justify-content: center;
@@ -276,7 +277,7 @@ margin-top: 94px;
     background-image: url(../img/icon/features/diagram.svg);
  }
 
- .icon-astronaut::before{
+ .icon-asronaut::before{
     background-size: 70px;
     background-image: url(../img/icon/features/astronaut.svg);
  }
@@ -297,7 +298,6 @@ margin-top: 94px;
 
 /*  What are we doing */
 .title-h2{
-    /* margin-top: 94px; */
     margin-bottom: 50px;
    
     text-align: center;
@@ -351,11 +351,18 @@ margin-top: 94px;
     
 }
 /* FOOTER */
+.nav-footer{
+    background-color: var(--title-text-color);    
+}
+.flexbox{
+    display: flex;
+    justify-content: flex-start;
+}
 .footer{
     padding-bottom: 60px;
     padding-top: 60px;
 
-    background-color: var(--title-text-color);
+
 }
 .logo-footer{
     padding-bottom: 20px;
@@ -401,6 +408,65 @@ address ul{
 .connection-footer:focus{
     color: var(--accent-color);
   }
+  .join{
+      padding-top: 72px;
+      padding-bottom: 100px;
+      margin-left: 70px;
+  }
+  .join-title{
+      padding-bottom: 20px;
+    color: var(--white);
+
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+  .ul-join .join-link+.join-link{
+      margin-left: 10px;
+  }
+
+  .join-link::before{
+      display: inline-block ;
+      justify-content: space-between;
+      content: "";
+      
+      height: 44px;
+      width: 44px;
+      
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+    }
+    .icon-instagram::before{
+        background-size: 20px;
+        background-image: url(../img/icon/footer/instagram.svg);
+    }
+    .icon-twitter::before{
+        background-size: 20px;
+        background-image: url(../img/icon/footer/twitter.svg);
+    }
+    .icon-facebook::before{
+        background-size: 20px;
+        background-image: url(../img/icon/footer/facebook.svg);
+    }
+    .icon-linkedin::before{
+        background-size: 20px;
+        background-image: url(../img/icon/footer/linkedin.svg);
+    }
+     
+    .join-link:hover{
+        height: 44px;
+        width: 44px;
+        background-color: #2196F3;
+        border-radius: 50%;
+    }
+    
+
+ 
 
   /* PORTFOLIO */
 .filter-nav{
