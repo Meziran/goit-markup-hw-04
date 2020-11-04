@@ -443,22 +443,23 @@ address ul{
     }
     .icon-instagram::before{
         background-size: 20px;
-        background-image: url(../img/icon/footer/instagram.svg);
+        background-image: url(../img/icon/footer/footer-instagram.svg);
     }
     .icon-twitter::before{
         background-size: 20px;
-        background-image: url(../img/icon/footer/twitter.svg);
+        background-image: url(../img/icon/footer/footer-twitter.svg);
     }
     .icon-facebook::before{
         background-size: 20px;
-        background-image: url(../img/icon/footer/facebook.svg);
+        background-image: url(../img/icon/footer/footer-facebook.svg);
     }
     .icon-linkedin::before{
         background-size: 20px;
-        background-image: url(../img/icon/footer/linkedin.svg);
+        background-image: url(../img/icon/footer/footer-linkedin.svg);
     }
      
-    .join-link:hover{
+    .join-link:hover,
+    .join-link:focus{
         height: 44px;
         width: 44px;
         background-color: #2196F3;
