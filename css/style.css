@@ -13,6 +13,7 @@ html{
     --accent-color: #2196F3;
     --white: #FFFFFF;
     --not-white: #F5F4FA;
+    --fill-icons:  #AFB1B8;
 }
 
 * body{
@@ -61,7 +62,6 @@ a {
     padding-left: 15px;
     padding-right: 15px;
     
-    /* border: 1px solid red; */
     /* border: 1px solid transparent; */
 }
 .visually-hidden {
@@ -92,8 +92,26 @@ align-items: center;
 }
 .info-list{
     display: flex;
-    margin-left: auto;  
+    margin-left: auto;
+    justify-content: center;
+    border: 1px solid red;
 }    
+.icon-envelope{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 16x;
+    width: 12px;
+    /* fill: var(--fill-icons);  */
+    fill: #757575;
+}
+
+.envelope {
+   /* width: 16px;
+   height: 12px;  */
+   padding-right: 10px;
+}
 
 .info-list .connection-header{
     display: block;
@@ -149,6 +167,9 @@ align-items: center;
 } 
 
 .connection-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--primery-text-color);
 
     font-weight: 500;
@@ -160,6 +181,8 @@ align-items: center;
 .connection-header:focus{
     color: var(--accent-color);
 }
+
+
 
 /* HERO */
 .hero{
@@ -306,6 +329,7 @@ margin-top: 94px;
     line-height: 1.19;
     }
 
+.cont-client,
 .cont-doing,
 .title-client
 {
@@ -342,6 +366,7 @@ margin-top: 94px;
     line-height: 1.19;
     padding-bottom: 16px;
 }
+.client-icons,
 .social-icons{
     display: flex;
     justify-content: center;
@@ -357,26 +382,70 @@ margin-top: 94px;
 
     height: 44px;
     width: 44px;
-
-    /* background-color: #fff;  */
+    fill: var(--fill-icons); 
     border-radius: 50%;
 }
 .social-icons-svg{
     width: 20px;
     height: 20px;
 }
+.icons-link:hover{
+    background-color: var(--accent-color);
+}
 .icons-link:hover .social-icons-svg,
 .icons-link:target .social-icons-svg{
-   fill: #2196F3; 
+     fill: var(--white); 
 }
 /*client */
-.card-client{
-    width: 170px;
+.icons-item-client:not(:last-child){
+    margin-right: 30px;
+}
+
+.icons-link-clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
     height: 90px;
-    border: 1px solid red ;
-    background-position: center;
+    border: 1px solid var(--fill-icons);
+    border-radius: 4px;
+    fill: var(--fill-icons);
+}
+.client-icons-svg1{
+    width: 44px;
+    height: 49px;
+}
+.client-icons-svg2{
+    width: 40px;
+    height: 52px;
+}
+.client-icons-svg3{
+    width: 41px;
+    height: 43px;
+}
+.client-icons-svg4{
+    width: 80px;
+    height: 42px;
+    box-sizing: border-box;
+}
+.client-icons-svg5{
+    width: 59px;
+    height: 47px;
     
 }
+.client-icons-svg6{
+    width: 88px;
+    height: 45px;
+}
+.icons-link-clients:hover{
+    border: 1px solid var(--accent-color);
+}
+.icons-link-clients:hover .client-icons-svg,
+.icons-link-clients:target .client-icons-svg{
+     fill: var(--accent-color); 
+}
+
+
 /* FOOTER */
 .nav-footer{
     background-color: var(--title-text-color);    
